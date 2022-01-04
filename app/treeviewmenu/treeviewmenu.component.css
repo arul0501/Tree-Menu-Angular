@@ -1,0 +1,62 @@
+:host {
+    display: block;
+}
+.header__toggle {
+    cursor: pointer;
+    display: flex;
+    border: 2px solid #e0e0e0;
+    border-radius: 3px 3px 3px 3px;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.header__toggle:hover {
+    border-color: #ff3366;
+}
+.header__icon {
+    color: #666666;
+    height: 16px;
+    width: 16px;
+    transition: color 150ms ease, transform 150ms ease;
+}
+.header__icon--expanded {
+    color: #ff3366;
+    transform: rotate(90deg);
+}
+.header__label {
+    margin-left: 7px;
+}
+.contents {
+    border-left: 1px dashed #ff3366;
+    margin: 0px 0px 0px 20px;
+    padding: 5px 0px 5px 15px;
+}
+.folders {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.folders__item {
+    margin: 3px 0px 3px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.files {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.files__item {
+    margin: 3px 0px 3px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.folders + .files {
+    margin-top: 15px;
+}
+.empty {
+    color: #999999;
+    display: block;
+    font-style: italic;
+    padding: 10px 10px 10px 10px;
+}

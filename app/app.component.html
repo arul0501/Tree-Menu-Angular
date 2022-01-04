@@ -1,0 +1,11 @@
+<p class="toggles">
+    <a (click)="expandAll()" class="toggle">Expand All</a>
+    &mdash;
+    <a (click)="collapseAll()" class="toggle">Collapse All</a>
+</p>
+
+<tree-view-menu
+    [rootFolder]="rootFolder"
+    [expandedFolders]="expandedFolders"
+    (toggleFolder)="toggleFolder( $event )">
+</tree-view-menu>
